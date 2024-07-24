@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from .models import *
-from rest_framework import viewsets, permissions, filters
-from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import viewsets, permissions
 from .serializers import *
+
 # Create your views here.
 class CreateReservacionViewset(viewsets.ModelViewSet):
     queryset = Reservacion.objects.all()
@@ -12,7 +12,6 @@ class CreateReservacionViewset(viewsets.ModelViewSet):
 class CreateReportesViewset(viewsets.ModelViewSet):
     queryset = Reportes.objects.all()
     serializer_class = ReportesSerializer
-
 
 class CreateUsuarioViewSet(viewsets.ModelViewSet):
     queryset = Usuario.objects.all()
