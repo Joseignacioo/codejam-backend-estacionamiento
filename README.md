@@ -1,5 +1,9 @@
 # codejam-backend-estacionamiento
 
+Integrantes:
+Jose Romero,
+David Etchepare
+
 CONTEXTO: Crear un software que puede gestionar la reserva de estacionamientos
 OBJETIVO: Crear el backend del proyecto para su uso como api
 
