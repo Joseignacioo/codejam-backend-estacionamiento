@@ -40,7 +40,9 @@ class Reservacion(models.Model):
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     estacionamiento = models.ForeignKey(Estacionamiento, on_delete=models.CASCADE)
     
-
+    def __str__(self):
+        return self.fecha_creacion
+    
 class Reportes(models.Model):
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     titulo = models.CharField(max_length=30)
