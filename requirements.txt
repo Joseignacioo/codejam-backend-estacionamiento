@@ -1,0 +1,5 @@
+django-crispy-forms
+pillow
+django-rest-framework
+django-filter
+psycopg2-binary
